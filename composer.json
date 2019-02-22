@@ -1,0 +1,46 @@
+{
+  "name": "ironcode/aws-bundle",
+  "description": "Make live easier with AWS PHP SDK",
+  "keywords": ["aws", "sdk"],
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "IronCode",
+      "homepage": "http://ironcode.io"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "symfony/framework-bundle": "^3.4|^4.0",
+    "symfony/options-resolver": "^3.4.4|^4.0",
+    "symfony/property-info": "^3.4|^4.0",
+    "aws/aws-sdk-php-symfony": "^2.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "csa/guzzle-bundle": "^3.1"
+  },
+  "require-dev": {
+    "symfony/templating": "^3.4|^4.0",
+    "symfony/twig-bundle": "^3.4|^4.0",
+    "symfony/asset": "^3.4|^4.0",
+    "symfony/console": "^3.4|^4.0",
+    "symfony/config": "^3.4|^4.0",
+    "symfony/validator": "^3.4|^4.0",
+    "symfony/property-access": "^3.4|^4.0",
+    "symfony/form": "^3.4|^4.0",
+    "symfony/dom-crawler": "^3.4|^4.0",
+    "symfony/browser-kit": "^3.4|^4.0",
+    "symfony/cache": "^3.4|^4.0",
+    "symfony/phpunit-bridge": "^3.4|^4.0",
+    "symfony/stopwatch": "^3.4|^4.0",
+    "sensio/framework-extra-bundle": "^3.0",
+    "doctrine/annotations": "^1.2",
+    "doctrine/common": "^2.4",
+    "phpunit/phpunit": ">=4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "IronCode\\AwsBundle\\": ""
+    }
+  }
+}

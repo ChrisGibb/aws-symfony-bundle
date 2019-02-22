@@ -1,0 +1,10 @@
+services:
+    IronCode\AwsBundle\Service\AwsService:
+        arguments:
+            $region: '%iron_code_aws.region%'
+    IronCode\AwsBundle\Service\LambdaService:
+        arguments:
+            $awsService: '@IronCode\AwsBundle\Service\AwsService'
+    IronCode\AwsBundle\Service\S3Service:
+        arguments:
+            $awsService: '@IronCode\AwsBundle\Service\AwsService'
