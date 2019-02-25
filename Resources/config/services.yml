@@ -1,3 +1,6 @@
+parameters:
+    iron_code_aws.region: 'eu-west-1'
+
 services:
     IronCode\AwsBundle\Service\AwsService:
         arguments:

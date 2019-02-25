@@ -18,13 +18,13 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
+
         $rootNode = $treeBuilder->root('iron_code_aws');
 
         $rootNode
             ->children()
-                ->scalarNode('region')->end()
-            ->end()
-        ;
+                ->variableNode('region')
+            ->end();
 
         return $treeBuilder;
     }
